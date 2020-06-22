@@ -36,12 +36,14 @@ def pKronecker(m,n,p,q,M_1,M_2):
         for j in range(0,n):                    # columna matriz 1
             for k in range(0,p):                # fila matriz 2
                 for l in range(0,q):            # columna matriz 2
-                    Matriz_Resultado[(p*i) +k][(q*j) +l] = M_1[i][j] * M_2[k][l]
+                    alpha = (p*i) +k
+                    beta = (q*j) +l
+                    Matriz_Resultado[alpha][beta] = M_1[i][j]*M_2[k][l]
                     '''
                     Con la siguiente linea comprobamos que nos estamos refiriendo a la entrada correcta
                     en la matriz resultado
                     '''
-                    print((p*i) +k, (q*j) +l)       
+                    print(alpha, beta)       
     # 1.4. Se imprime la lista en forma matricial
     for i in range(len(Matriz_Resultado)):
         print(Matriz_Resultado[i])
