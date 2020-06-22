@@ -28,8 +28,19 @@ def pKronecker(m,n,p,q,M_1,M_2):
             print('No es una matriz, no todas las filas tienen la misma longitud.')
             return
     # 1.2. Se define la matriz en la cual se ingresarán los datos del producto
-    Matriz_Resultado = [[0]*(n * q)]*(m * p) # Matriz de (mp)x(nq)
+    print(m,n,p,q)
+    # Matriz de (mp)x(nq)
+    '''
+    List_nq = []
+    Matriz_Resultado = []
+    for j in range((n*q)):
+        List_nq.append(0)
+
+    for i in range((m*p)):
+        Matriz_Resultado.append(List_nq)
     print(Matriz_Resultado)
+    '''
+    Matriz_Resultado = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
 
     # 1.3. Se multiplican los terminos y se añaden a la matriz resultado
     for i in range(0,m):                        # fila matriz 1
