@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # En este programa se define una funcion que realize el producto de kronecker para dos matrices arbitrarias
 
 # 20.06.2020
